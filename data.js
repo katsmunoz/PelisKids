@@ -81,9 +81,9 @@ for (let i = 0; i<allMovies.length; i++){
       finalArray.push(data)  
       movieBase.innerHTML +=`<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
       <div class="card" style="width: 18rem;">
-      <img src="${data.Poster}" id="img2" class="img-fluid" alt="poster">
-      <div class="card-body">
-      <h3 class="card-title">${data.Title}</h3>
+      <a href="index.html"><img src="${data.Poster}" id="img2" class="img-fluid" alt="poster"></a>
+      <div class="cardStyle">
+      <h3 class="cardTitle">${data.Title}</h3>
       </div>
       </div>
       </div>`
