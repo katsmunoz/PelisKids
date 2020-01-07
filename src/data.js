@@ -3,12 +3,6 @@
 // .then(data => console.log(data))
 // .catch(error => console.log(error))
 
-//Cambiar de FIRST PAGE a SECOND PAGE al hacer click en la imagen 
-document.getElementById('allDisney').addEventListener('click', () => {
-    firstPage.style.display = 'none';
-    secondPage.style.display = 'block';
-  });
-
 const bestDisneyMovies = [
     {title:'Aladdin', imdbID:'tt0103639'},
     {title:'Beauty and the Beast', imdbID:'tt0101414'},
@@ -33,7 +27,6 @@ const bestDreamworksMovies =[
     {Title:'Bee Movie', imdbID:'tt0389790'},
     {Title:'Antz', imdbID:'tt0120587'}
 ];
-// console.log(bestDreamworksMovies);
 
 const bestGhibliMovies = [
     {Title:'My Neighbor Totoro', imdbID:'tt0096283'},
@@ -68,24 +61,133 @@ const bestPixarMovies = [
     {title:'The Good Dinosaur', imdbID:'tt1979388'},
 ];
 
-const movieBase = document.getElementById('showMovies');
+// const allMovies = [].concat(bestDisneyMovies, bestDreamworksMovies, bestGhibliMovies, bestPixarMovies);
 
-const allMovies = [].concat(bestDisneyMovies, bestDreamworksMovies, bestGhibliMovies, bestPixarMovies);
+// divs para cada Estudio
+const disneyBase = document.getElementById('showDisney');
+const dreamworksBase = document.getElementById('showDreamworks');
+const pixarBase = document.getElementById('showPixar');
+const ghibliBase = document.getElementById('showGhibli');
 
-movieBase.innerHTML = ''; 
-finalArray = [];  
-for (let i = 0; i<allMovies.length; i++){    
-    fetch('http://www.omdbapi.com/?i='+allMovies[i].imdbID+'&apikey=532b53fa')
-    .then(res => res.json())
-    .then(data => {
-      finalArray.push(data)  
-      movieBase.innerHTML +=`<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-      <div class="card" style="width: 18rem;">
-      <a href="index.html"><img src="${data.Poster}" id="img2" class="img-fluid" alt="poster"></a>
-      <div class="cardStyle">
-      <h3 class="cardTitle">${data.Title}</h3>
-      </div>
-      </div>
-      </div>`
-    }) 
-} 
+//Mostrar peliculas Disney
+document.getElementById('allDisney').addEventListener('click', () => {
+    firstPage.style.display = 'none';
+    secondPage.style.display = 'block';
+    thirdPage.style.display = 'none';
+  });
+
+document.getElementById('allDisney').addEventListener('click', showDisneyMovies);
+
+function showDisneyMovies () { 
+    disneyBase.innerHTML = '';
+    finalArray = [];  
+        for (let i = 0; i<bestDisneyMovies.length; i++) {    
+            fetch('http://www.omdbapi.com/?i='+bestDisneyMovies[i].imdbID+'&apikey=532b53fa')
+            .then(res => res.json())
+            .then(data => {
+            finalArray.push(data)  
+            disneyBase.innerHTML +=`<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="card" style="width: 18rem;">
+            <a href="index.html"><img src="${data.Poster}" id="img2" class="img-fluid" alt="poster"></a>
+            <div class="cardStyle">
+            <h3 class="cardTitle">${data.Title}</h3>
+            </div>
+            </div>
+            </div>`
+            })
+        }
+    }
+
+//Mostrar peliculas Dreamworks
+document.getElementById('allDreamworks').addEventListener('click', () => {
+    firstPage.style.display = 'none';
+    secondPage.style.display = 'none';
+    thirdPage.style.display = 'block';
+  });
+document.getElementById('allDreamworks').addEventListener('click', showDreamworksMovies);
+
+function showDreamworksMovies () { 
+    dreamworksBase.innerHTML = '';
+    finalArray = [];  
+        for (let i = 0; i<bestDreamworksMovies.length; i++) {    
+            fetch('http://www.omdbapi.com/?i='+bestDreamworksMovies[i].imdbID+'&apikey=532b53fa')
+            .then(res => res.json())
+            .then(data => {
+            finalArray.push(data)  
+            dreamworksBase.innerHTML +=`<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="card" style="width: 18rem;">
+            <a href="index.html"><img src="${data.Poster}" id="img2" class="img-fluid" alt="poster"></a>
+            <div class="cardStyle">
+            <h3 class="cardTitle">${data.Title}</h3>
+            </div>
+            </div>
+            </div>`
+            })
+        }
+    }
+
+//Mostrar peliculas Pixar
+document.getElementById('allPixar').addEventListener('click', () => {
+    firstPage.style.display = 'none';
+    secondPage.style.display = 'none';
+    thirdPage.style.display = 'none';
+    fourthPage.style.display = 'block';
+  });
+
+document.getElementById('allPixar').addEventListener('click', showPixarMovies);
+
+function showPixarMovies () { 
+    pixarBase.innerHTML = '';
+    finalArray = [];  
+        for (let i = 0; i<bestPixarMovies.length; i++) {    
+            fetch('http://www.omdbapi.com/?i='+bestPixarMovies[i].imdbID+'&apikey=532b53fa')
+            .then(res => res.json())
+            .then(data => {
+            finalArray.push(data)  
+            pixarBase.innerHTML +=`<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class style="width: 18rem;">
+            <a href="index.html"><img src="${data.Poster}" id="img2" class="img-fluid" alt="poster"></a>
+            <div class="cardStyle">
+            <h3 class="cardTitle">${data.Title}</h3>
+            </div>
+            </div>
+            </div>`
+            })
+        }
+    }
+
+//Mostrar peliculas Ghibli
+document.getElementById('allGhibli').addEventListener('click', () => {
+    firstPage.style.display = 'none';
+    secondPage.style.display = 'none';
+    thirdPage.style.display = 'none';
+    fourthPage.style.display = 'none';
+    fifthPage.style.display = 'block';
+  });
+
+document.getElementById('allGhibli').addEventListener('click', showGhibliMovies);
+
+function showGhibliMovies () { 
+    ghibliBase.innerHTML = '';
+    finalArray = [];  
+        for (let i = 0; i<bestGhibliMovies.length; i++) {    
+            fetch('http://www.omdbapi.com/?i='+bestGhibliMovies[i].imdbID+'&apikey=532b53fa')
+            .then(res => res.json())
+            .then(data => {
+            finalArray.push(data)  
+            ghibliBase.innerHTML +=`<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="card" style="width: 18rem;">
+            <a href="index.html"><img src="${data.Poster}" id="img2" class="img-fluid" alt="poster"></a>
+            <div class="cardStyle">
+            <h3 class="cardTitle">${data.Title}</h3>
+            </div>
+            </div>
+            </div>`
+            })
+        }
+    }
+
+// Filtrar por género
+
+document.getElementById('genreSearch').addEventListener('change', )
+

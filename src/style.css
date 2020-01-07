@@ -3,16 +3,29 @@
   padding: 0;
 } */
 
-#showMovies {
+.sectionStyles {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
+  text-align: center;
+  }
 
 #firstPage {
     display: block;
   }
 
 #secondPage {
+    display: none;
+  }
+
+#thirdPage {
+    display: none;
+  }
+
+#fourthPage {
+    display: none;
+  }
+
+#fifthPage {
     display: none;
   }
