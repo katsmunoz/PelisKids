@@ -1,8 +1,8 @@
 //=======================================================================================================================//
-//===================================================SECCION DE PAGINA DISNEY==============================================//
+//===================================================SECCIÓN DE PÁGINA DISNEY==============================================//
 //=======================================================================================================================//
 
-//funcion que filtra peliculas disney por genero
+// Función que filtra películas disney por género
 function showDisneyMovies (genreDisney) { 
     disneyBase.innerHTML = ''; //limpiando div
     let finalData;  
@@ -26,12 +26,16 @@ function showDisneyMovies (genreDisney) {
                             <div class="col-4"><img src="${data.Poster}" alt="" class="img-thumbnail"></div>
                             <div class="align-left col-8">
                                 <h3 class="align-left title-movie">${data.Title}</h3>
-                                <p><span class="bold">Año:</span> ${data.Year}</p>
-                                <p><span class="bold">Clasificación:</span> ${data.Rated}</p>
-                                <p><span class="bold">Género:</span> ${data.Genre}</p>
+                                <p class="genre"><span class="bold">Género:</span> ${data.Genre}</p>
+                                <div class="row"><p class="pink datos"><span class="bold">Año:</span> ${data.Year}</p>
+                                <p class="pink datos"><span class="bold">Clasificación:</span> ${data.Rated}</p></div>
                                 <p><span class="bold">Sinopsis:</span> ${data.Plot}</p>
-                                <p><span class="bold">Reparto:</span> ${data.Actors}</p>
+                                <p><span class="bold">Idioma:</span> ${data.Language}</p>
+                                <p><span class="bold">País:</span> ${data.Country}</p>
                                 <p><span class="bold">🏆 Premios:</span> ${data.Awards}</p>
+                                <div class="pink"><p><span class="bold">Director:</span> ${data.Director}</p>
+                                <p><span class="bold">Writer:</span> ${data.Writer}</p>
+                                <p><span class="bold">Reparto:</span> ${data.Actors}</p></div>
                                     </div>
                             </div>
                         </div>
@@ -43,7 +47,7 @@ function showDisneyMovies (genreDisney) {
         }
     };
 
-//funcion que filtra peliculas disney por rated
+// Función que filtra películas disney por rated
     function showDisneyMoviesForRated (ratedDisney) { 
         disneyBase.innerHTML = '';
         let finalData;  
@@ -127,7 +131,7 @@ function showDreamworksMovies (genreDreamworks) {
             })
         }
     };
-    //filtro peliculas dreamwork por rated
+    // Filtro películas dreamwork por rated
     function showDreamworkMoviesForRated (ratedDreamwork) { 
         dreamworksBase.innerHTML = '';
         let finalData;  
@@ -169,7 +173,7 @@ function showDreamworksMovies (genreDreamworks) {
     };
 
 //=======================================================================================================================//
-//===================================================SECCION DE PAGINA PIXAR==============================================//
+//===================================================SECCIÓN DE PÁGINA PIXAR==============================================//
 //=======================================================================================================================//
 
 function showPixarMovies (genrePixar) { 
@@ -253,7 +257,7 @@ function showPixarMoviesForRated(ratedPixar) {
     };
 
 //=======================================================================================================================//
-//===================================================SECCION DE PAGINA GHIBLI==============================================//
+//===================================================SECCIÓN DE PÁGINA GHIBLI==============================================//
 //=======================================================================================================================//
 
 function showGhibliMovies (genreGhibli) { 
