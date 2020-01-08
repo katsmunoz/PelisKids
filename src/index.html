@@ -4,51 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css"/>
-    <title>Document</title>
-
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Stoke&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <title>PelisKids</title>
 </head>
 
 <body>
-<div id="firstPage">
-    <h3>Catálogo de peliculas para disfrutar juntos a tus hijos!</h3>
+    <header>
+    <div class="logo">
+        <img src="images/logo.png">
+    </div>
+    </header>
 
-    <button id="allDisney">Disney</button>
-    <button id="allDreamworks">Dreamworks</button>
-    <button id="allPixar">Pixar</button>
-    <button id="allGhibli">Ghibli</button>
+<div id="firstPage">
+    <section>
+        <div class="row">
+            <div class="thumbnail text-center">
+                <img class="img-fluid" src="images/fondoUp.png" alt="fondo">
+            </div>
+        </div>
+    <div>
+        <div id="infoApp" class="caption">
+            <h1>Las mejores películas de tus estudios favoritos</h1>
+            <h2>Navega por PelisKids para conocer las mejores opciones de filmes infantiles. ¡Con reseñas incluídas! Escoge la mejor opción para una tarde de películas en familia.</h2>
+            <h2>Echa un vistazo a las siguientes categorías. ¿Ya tienes listas las palomitas?</h2>
+        </div>
+    </div>
+        <div class="text-center">
+            <img id="allDisney" class="img-fluid" src="images/disneyland-castle-redondo.png" alt="">
+            <img id="allDreamworks" class="img-fluid" src="images/dreamworks-redondo.png" alt="">
+            <img id="allPixar" class="img-fluid" src="images/pixar-redondo.png" alt="">
+            <img id="allGhibli" class="img-fluid" src="images/studio-ghibli-redondo.png" alt="">
+        </div>
+    </section>
 </div>
 
 <div id="secondPage">
-    <select id="genreSearch">
+    <div id='descriptionStudioDisney' style="display:none;">
+        <h1>Studio Disney</h1>
+        <p>The Walt Disney Studios es un estudio de cine estadounidense, es una de las cuatro divisiones comerciales de The Walt Disney Company. El estudio, es uno de los más importantes del mundo ya que es considerado el número uno de los "Cinco Grandes" y es mejor conocido por sus divisiones cinematográficas multifacéticas, tiene su sede en el estudio homónimo de The Walt Disney Studios en Burbank, California. Fundado en 1923, es el cuarto más antiguo entre los principales estudios.</p>
+    </div>
+    <select id="genreSearchDisney">
         <option value="">Filtrar por Género</option>
-        <option value="action">Acción</option>
-        <option value="animation">Animación</option>
-        <option value="adventure">Aventura</option>
-        <option value="sci-fi">Ciencia Ficción</option>
-        <option value="comedy">Comedia</option>
-        <option value="sports">Deportes</option>
-        <option value="family">Familiar</option>
-        <option value="fantasy">Fantasía</option>
-        <option value="mystery">Misterio</option>
-        <option value="musical">Musical</option>
-        <option value="romance">Romance</option>
+        <option value="Action">Acción</option>
+        <option value="Adventure">Aventura</option>
+        <option value="Sci-fi">Ciencia Ficción</option>
+        <option value="Comedy">Comedia</option>
+        <option value="Sports">Deportes</option>
+        <option value="Family">Familiar</option>
+        <option value="Fantasy">Fantasía</option>
+        <option value="Mystery">Misterio</option>
+        <option value="Musical">Musical</option>
+        <option value="Romance">Romance</option>
+    </select>
+    <select id="ratedSearchDisney">
+            <option value="">Filtrar por Clasificación</option>
+            <option value="G">G - Apto para todo público</option>
+            <option value="PG">PG - Guía paternal sugerida</option>
+            <option value="PG-13">PG-13 - Supervisión paternal obligatoria</option>
     </select>
     <section id="showDisney" class="sectionStyles">
     </section>
 </div>
 
 <div id="thirdPage">
+    <div id="descriptionStudioDreamwork" style="display:none;">
+        <h1>Studio Dreamworks</h1>
+        <p>DreamWorks es un estudio de cine que produce y distribuye películas, así como videojuegos y programas de televisión, fundado el 12 de octubre de 1994, poco tiempo después de que Jeffrey Katzenberg renunciara a The Walt Disney Company. En 2016 DreamWorks fue comprada por Comcast,la compañía de telecomunicaciones dueña de NBC Universal. Esta compra fue lo suficiente para mejorar el estudio. Hoy está entre las 8 grandes de Hollywood.</p>
+    </div>
+    <select id="genreSearchDreamworks">
+            <option value="">Filtrar por Género</option>
+            <option value="Action">Acción</option>
+            <option value="Adventure">Aventura</option>
+            <option value="Sci-fi">Ciencia Ficción</option>
+            <option value="Comedy">Comedia</option>
+            <option value="Sports">Deportes</option>
+            <option value="Family">Familiar</option>
+            <option value="Fantasy">Fantasía</option>
+            <option value="Mystery">Misterio</option>
+            <option value="Musical">Musical</option>
+            <option value="Romance">Romance</option>
+    </select>
+    <select id="ratedSearchDreamworks">
+            <option value="">Filtrar por Clasificación</option>
+            <option value="G">G - Apto para todo público</option>
+            <option value="PG">PG - Guía paternal sugerida</option>
+            <option value="PG-13">PG-13 - Supervisión paternal obligatoria</option>
+    </select>    
     <section id="showDreamworks" class="sectionStyles">
     </section>
 </div>
 
 <div id="fourthPage">
+    <div id='descriptionStudioPixar' style="display:none;">
+        <h1>Studio Pixar</h1>
+        <p>Pixar Animation Studios (Pixar) es un estudio cinematográfico de animación por computadora subsidario de Walt Disney Studios y propiedad de The Walt Disney Company con sede en Emeryville, Estados Unidos.3​ Su origen se remonta a 1979, cuando comenzó a operar como The Graphics Group, la división computacional de Lucasfilm. Su filmografía, producida con su propio software RenderMan, incluye algunas de las películas animadas más exitosas y elogiadas de todos los tiempos. Asimismo el equipo de Pixar ha recibido varios premios por sus logros técnicos en el cine de animación.</p>
+    </div>
+    <select id="genreSearchPixar">
+            <option value="">Filtrar por Género</option>
+            <option value="Action">Acción</option>
+            <option value="Adventure">Aventura</option>
+            <option value="Sci-fi">Ciencia Ficción</option>
+            <option value="Comedy">Comedia</option>
+            <option value="Sports">Deportes</option>
+            <option value="Family">Familiar</option>
+            <option value="Fantasy">Fantasía</option>
+            <option value="Mystery">Misterio</option>
+            <option value="Musical">Musical</option>
+            <option value="Romance">Romance</option>
+    </select>
+    <select id="ratedSearchPixar">
+            <option value="">Filtrar por Clasificación</option>
+            <option value="G">G - Apto para todo público</option>
+            <option value="PG">PG - Guía paternal sugerida</option>
+            <option value="PG-13">PG-13 - Supervisión paternal obligatoria</option>
+    </select>
     <section id="showPixar" class="sectionStyles">
     </section>
 </div>
 
 <div id="fifthPage">
+    <div id='descriptionStudioGhibli' style="display:none;">
+        <h1>Studio Ghibli</h1>
+        <p>Studio Ghibli es un estudio japonés de animación, considerado por la crítica especializada y muchos cinéfilos como uno de los mejores estudios de animación del mundo en la actualidad. Fundado en 1985, está dirigido por el galardonado director Hayao Miyazaki junto a su amigo y mentor, Isao Takahata. Sus orígenes datan de 1983, con la película Nausicäa del Valle del Viento, la cual comenzó como un manga en una publicación de la revista Tokuma Shoten.</p>
+    </div>
+    <select id='genreSearchGhibli'>
+            <option value="">Filtrar por Género</option>
+            <option value="Action">Acción</option>
+            <option value="Adventure">Aventura</option>
+            <option value="Sci-fi">Ciencia Ficción</option>
+            <option value="Comedy">Comedia</option>
+            <option value="Sports">Deportes</option>
+            <option value="Family">Familiar</option>
+            <option value="Fantasy">Fantasía</option>
+            <option value="Mystery">Misterio</option>
+            <option value="Musical">Musical</option>
+            <option value="Romance">Romance</option>
+    </select>
+    <select id="ratedSearchGhibli">
+            <option value="">Filtrar por Clasificación</option>
+            <option value="G">G - Apto para todo público</option>
+            <option value="PG">PG - Guía paternal sugerida</option>
+            <option value="PG-13">PG-13 - Supervisión paternal obligatoria</option>
+    </select>
     <section id="showGhibli" class="sectionStyles">
     </section>
 </div>
