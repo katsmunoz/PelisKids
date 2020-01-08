@@ -1,5 +1,5 @@
 //=======================================================================================================================//
-//=================================SECCION EN DONDE SE ARMAN LOS ARREGLOS CON LAS PELICULAS ==============================//
+//=================================SECCIÓN EN DONDE SE ARMAN LOS ARREGLOS CON LAS PELÍCULAS ==============================//
 //=======================================================================================================================//
 const bestDisneyMovies = [
     {title:'Aladdin', imdbID:'tt0103639'},
@@ -23,7 +23,8 @@ const bestDreamworksMovies =[
     {Title:'Flushed Away', imdbID:'tt0424095'},
     {Title:'Kung Fu Panda 3', imdbID:'tt2267968'},
     {Title:'Bee Movie', imdbID:'tt0389790'},
-    {Title:'Antz', imdbID:'tt0120587'}
+    {Title:'Antz', imdbID:'tt0120587'},
+    {Title:'Chicken Run', imdbID:'tt0120630'}
 ];
 
 const bestGhibliMovies = [
@@ -35,7 +36,9 @@ const bestGhibliMovies = [
     {Title:'The Secret World of Arrietty', imdbID:'tt1568921'},
     {Title:'Kikis Delivery Service', imdbID:'tt0097814'},
     {Title:'Ponyo', imdbID:'tt0876563'},
-    {Title:'The Cat Returns', imdbID:'tt0347618'}
+    {Title:'The Cat Returns', imdbID:'tt0347618'},
+    {Title:'Only Yesterday', imdbID:'tt0102587'},
+    {Title:'Whisper of the Heart', imdbID:'tt0113824'}
 ];
 
 const bestPixarMovies = [
@@ -56,7 +59,7 @@ const bestPixarMovies = [
     {title:'Cars 2', imdbID:'tt1216475'},
     {title:'Coco', imdbID:'tt2380307'},
     {title:'Brave', imdbID:'tt1217209'},
-    {title:'The Good Dinosaur', imdbID:'tt1979388'},
+    {title:'The Good Dinosaur', imdbID:'tt1979388'}
 ];
 
 //=======================================================================================================================//
@@ -78,31 +81,31 @@ document.getElementById('allDisney').addEventListener('click', () => {
     thirdPage.style.display = 'none';
   });
 
-// se detecta el click de boton de disney para mostrar la descripcion  
+// Se detecta el click de botón de disney para mostrar la descripción  
 document.getElementById('allDisney').addEventListener('click',showDescriptionStudioDisney);
 
-//detectando select para filtrar por genero 
+// Detectando select para filtrar por género 
 const selectDisney = document.getElementById('genreSearchDisney');
-selectDisney.addEventListener("change", function() { 
-    const genreDisney = document.getElementById("genreSearchDisney").value; //se rescata el valor del genero seleccionado
+selectDisney.addEventListener('change', function() { 
+    const genreDisney = document.getElementById('genreSearchDisney').value; //se rescata el valor del genero seleccionado
     showDisneyMovies(genreDisney);
 });
 
-//detectando select para filtrar por rated  
+// Detectando select para filtrar por rated  
 const selectRatedDisney = document.getElementById('ratedSearchDisney');
-selectRatedDisney.addEventListener("change", function() { 
-    const ratedDisney = document.getElementById("ratedSearchDisney").value;
+selectRatedDisney.addEventListener('change', function() { 
+    const ratedDisney = document.getElementById('ratedSearchDisney').value;
     showDisneyMoviesForRated(ratedDisney);
 });
 
-//funcion que muestra la descripcion disney
+// Función que muestra la descripción disney
 function showDescriptionStudioDisney (){
 let studioDisney= document.getElementById('descriptionStudioDisney')
 studioDisney.style.display = 'block';
 }
 
 //=======================================================================================================================//
-//===================================================SECCION DE PAGINA DREAMWORKS==============================================//
+//===================================================SECCIÓN DE PÁGINA DREAMWORKS==============================================//
 //=======================================================================================================================//
 
 document.getElementById('allDreamworks').addEventListener('click', () => {
@@ -113,15 +116,15 @@ document.getElementById('allDreamworks').addEventListener('click', () => {
 document.getElementById('allDreamworks').addEventListener('click', showDescriptionStudioDreamwork);
 
 const selectDreamworks = document.getElementById('genreSearchDreamworks');// llamar al id del select
-selectDreamworks.addEventListener("change", function() { 
-    const genreDreamworks = document.getElementById("genreSearchDreamworks").value;
+selectDreamworks.addEventListener('change', function() { 
+    const genreDreamworks = document.getElementById('genreSearchDreamworks').value;
     showDreamworksMovies(genreDreamworks);
 });
 
-//detectando select para filtrar por rated
+// Detectando select para filtrar por rated
 const selectRatedDreamwork = document.getElementById('ratedSearchDreamworks');// llamar al id del select
-selectRatedDreamwork.addEventListener("change", function() { 
-    const ratedDreamwork = document.getElementById("ratedSearchDreamworks").value;
+selectRatedDreamwork.addEventListener('change', function() { 
+    const ratedDreamwork = document.getElementById('ratedSearchDreamworks').value;
     showDreamworkMoviesForRated(ratedDreamwork);
 });
 
@@ -131,7 +134,7 @@ function showDescriptionStudioDreamwork () {
 }
 
 //=======================================================================================================================//
-//===================================================SECCION DE PAGINA PIXAR==============================================//
+//===================================================SECCIÓN DE PÁGINA PIXAR==============================================//
 //=======================================================================================================================//
 
 document.getElementById('allPixar').addEventListener('click', () => {
@@ -144,15 +147,15 @@ document.getElementById('allPixar').addEventListener('click', () => {
 document.getElementById('allPixar').addEventListener('click', showDescriptionStudioPixar);
 
 const selectPixar = document.getElementById('genreSearchPixar');// llamar al id del select
-selectPixar.addEventListener("change", function() { 
-    const genrePixar = document.getElementById("genreSearchPixar").value;
+selectPixar.addEventListener('change', function() { 
+    const genrePixar = document.getElementById('genreSearchPixar').value;
     showPixarMovies(genrePixar);
 });
 
-//detectando select para filtrar por rated
+// Detectando select para filtrar por rated
 const selectRatedPixar = document.getElementById('ratedSearchPixar');// llamar al id del select
-selectRatedPixar.addEventListener("change", function() { 
-    const ratedPixar = document.getElementById("ratedSearchPixar").value;
+selectRatedPixar.addEventListener('change', function() { 
+    const ratedPixar = document.getElementById('ratedSearchPixar').value;
     showPixarMoviesForRated(ratedPixar);
 });
 
@@ -176,15 +179,15 @@ document.getElementById('allGhibli').addEventListener('click', () => {
 document.getElementById('allGhibli').addEventListener('click', showDescriptionStudioGhibli);
 
 const selectGhibli = document.getElementById('genreSearchGhibli');// llamar al id del select
-selectGhibli.addEventListener("change", function() { 
-    const genreGhibli = document.getElementById("genreSearchGhibli").value;
+selectGhibli.addEventListener('change', function() { 
+    const genreGhibli = document.getElementById('genreSearchGhibli').value;
     showGhibliMovies(genreGhibli);
 });
 
-//detectando select para filtrar por rated
+// Detectando select para filtrar por rated
 const selectRatedGhibli = document.getElementById('ratedSearchGhibli');// llamar al id del select
-selectRatedGhibli.addEventListener("change", function() { 
-    const ratedGhibli = document.getElementById("ratedSearchGhibli").value;
+selectRatedGhibli.addEventListener('change', function() { 
+    const ratedGhibli = document.getElementById('ratedSearchGhibli').value;
     showGhibliMoviesForRated(ratedGhibli);
 });
 
