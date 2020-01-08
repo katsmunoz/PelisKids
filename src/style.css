@@ -15,14 +15,17 @@ body {
   line-height: 1.5;
   color: #212529;
   /* text-align: left; */
-  background-color: white;
+  background-color:rgba(150, 215, 224, 0.2);
 }
-
+ 
 .thumbnail {
   position: relative;
 
  }
  .caption {
+  position: absolute;
+  font-size: 39px;
+  line-height: 58px;
   background: rgba(251, 213, 185, 0.4);
   top: 30%;
   left: 0;
@@ -31,7 +34,7 @@ body {
  }
 
 #firstPage {
-    background-color:rgba(245, 149, 79, 0.8);
+    background-color:#B5DBDC;
   }
 
 #secondPage {
@@ -89,8 +92,17 @@ h3 {
 
 }
 
-.masthead{
-  background-image: url(images/BACKGROUND.jpg)
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.jumbotron {
+  background-color: #FFF0B8;
 }
 
 .genre{
