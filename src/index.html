@@ -76,140 +76,120 @@
         </div>
     </section>
 </div>
-
-    <div id="secondPage">
-        <div id='descriptionStudioDisney' style="display:none;">
-            <h1>Studio Disney</h1>
-            <p>The Walt Disney Studios es un estudio de cine estadounidense, es una de las cuatro divisiones comerciales
-                de The Walt Disney Company. El estudio, es uno de los más importantes del mundo ya que es considerado el
-                número uno de los "Cinco Grandes" y es mejor conocido por sus divisiones cinematográficas
-                multifacéticas, tiene su sede en el estudio homónimo de The Walt Disney Studios en Burbank, California.
-                Fundado en 1923, es el cuarto más antiguo entre los principales estudios.</p>
+<div id="secondPage">
+    <div class="row">
+        <div class="col-lg-12">
+            <img class="img-fluid" src="images/disneyHeadercut.jpg" />
         </div>
-        <h3>Busca tu película:</h3>
-        <select id="genreSearchDisney">
+    </div>
+    <div id='descriptionStudioDisney' style="display:none;">
+        
+        <h1 class="studioTitle">Studio Disney</h1>
+    </div>
+    <h2 class="instruction">Ahora filtra las películas según desees:</h2>
+    <select id="genreSearchDisney" class="selectBox">
+        <option value="">Filtrar por Género</option>
+        <option class="allSelect" value="Adventure">Aventura</option>
+        <option class="allSelect" value="Comedy">Comedia</option>
+        <option class="allSelect" value="Family">Familiar</option>
+        <option class="allSelect" value="Fantasy">Fantasía</option>
+        <option class="allSelect" value="Musical">Musical</option>
+        <option class="allSelect" value="Romance">Romance</option>
+    </select>
+    <select id="ratedSearchDisney" class="selectBox">
+            <option value="">Filtrar por Clasificación</option>
+            <option class="allSelect" value="G">G - Apto para todo público</option>
+            <option class="allSelect" value="PG">PG - Guía paternal sugerida</option>
+    </select>
+    <section id="showDisney" class="sectionStyles">
+    </section>
+</div>
+
+<div id="thirdPage">
+    <div id="descriptionStudioDreamwork" style="display:none;">
+        <div class="row">
+            <div class="col-lg-12">
+                <img class="img-fluid" src="images/dreamworksHeadercut.jpg" />
+            </div>
+        </div>
+        <h1 class="studioTitle">Studio Dreamworks</h1>
+    </div>
+    <h2 class="instruction">Ahora filtra las películas según desees:</h2>
+    <select id="genreSearchDreamworks" class="selectBox">
             <option value="">Filtrar por Género</option>
-            <option value="Action">Acción</option>
-            <option value="Adventure">Aventura</option>
-            <option value="Sci-fi">Ciencia Ficción</option>
-            <option value="Comedy">Comedia</option>
-            <option value="Sports">Deportes</option>
-            <option value="Family">Familiar</option>
-            <option value="Fantasy">Fantasía</option>
-            <option value="Mystery">Misterio</option>
-            <option value="Musical">Musical</option>
-            <option value="Romance">Romance</option>
-        </select>
-        <select id="ratedSearchDisney">
+            <option  class="allSelect" value="Action">Acción</option>
+            <option  class="allSelect" value="Adventure">Aventura</option>
+            <option  class="allSelect" value="Comedy">Comedia</option>
+            <option  class="allSelect"value="Family">Familiar</option>
+            <option  class="allSelect"value="Fantasy">Fantasía</option>
+            <option  class="allSelect" value="Musical">Musical</option>
+    </select>
+    <select id="ratedSearchDreamworks" class="selectBox">
             <option value="">Filtrar por Clasificación</option>
             <option value="G">G - Apto para todo público</option>
-            <option value="PG">PG - Guía paternal sugerida</option>
-            <option value="PG-13">PG-13 - Supervisión paternal obligatoria</option>
-        </select>
-        <section id="showDisney" class="sectionStyles">
-        </section>
-    </div>
+            <option value="PG">PG - Supervisión paternal sugerida</option>
+    </select>    
+    <section id="showDreamworks" class="sectionStyles">
+    </section>
+</div>
 
-    <div id="thirdPage">
-        <div id="descriptionStudioDreamwork" style="display:none;">
-            <h1>Studio Dreamworks</h1>
-            <p>DreamWorks es un estudio de cine que produce y distribuye películas, así como videojuegos y programas de
-                televisión, fundado el 12 de octubre de 1994, poco tiempo después de que Jeffrey Katzenberg renunciara a
-                The Walt Disney Company. En 2016 DreamWorks fue comprada por Comcast,la compañía de telecomunicaciones
-                dueña de NBC Universal. Esta compra fue lo suficiente para mejorar el estudio. Hoy está entre las 8
-                grandes de Hollywood.</p>
-        </div>
-        <h3>Busca tu película:</h3>
-        <select id="genreSearchDreamworks">
-            <option value="">Filtrar por Género</option>
-            <option value="Action">Acción</option>
-            <option value="Adventure">Aventura</option>
-            <option value="Sci-fi">Ciencia Ficción</option>
-            <option value="Comedy">Comedia</option>
-            <option value="Sports">Deportes</option>
-            <option value="Family">Familiar</option>
-            <option value="Fantasy">Fantasía</option>
-            <option value="Mystery">Misterio</option>
-            <option value="Musical">Musical</option>
-            <option value="Romance">Romance</option>
-        </select>
-        <select id="ratedSearchDreamworks">
-            <option value="">Filtrar por Clasificación</option>
-            <option value="G">G - Apto para todo público</option>
-            <option value="PG">PG - Guía paternal sugerida</option>
-            <option value="PG-13">PG-13 - Supervisión paternal obligatoria</option>
-        </select>
-        <section id="showDreamworks" class="sectionStyles">
-        </section>
+<div id="fourthPage">
+    <div id='descriptionStudioPixar' style="display:none;">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <img class="img-fluid" src="images/pixarHeadercut.jpg" />
+                    </div>
+                </div>
+        <h1 class="studioTitle" >Studio Pixar</h1>
     </div>
+    <h2 class="instruction">Ahora filtra las películas según desees:</h2>
+    <select id="genreSearchPixar" class="selectBox">
+            <option value="">Filtrar por Género</option>
+            <option  class="allSelect" value="Action">Acción</option>
+            <option  class="allSelect" value="Adventure">Aventura</option>
+            <option  class="allSelect" value="Comedy">Comedia</option>
+            <option  class="allSelect" value="Family">Familiar</option>
+            <option  class="allSelect" value="Fantasy">Fantasía</option>
+            <option  class="allSelect" value="Mystery">Misterio</option>
+            
+    </select>
+    <select id="ratedSearchPixar" class="selectBox">
+            <option value="">Filtrar por Clasificación</option>
+            <option  class="allSelect" value="G">G - Apto para todo público</option>
+            <option  class="allSelect" value="PG">PG - Guía paternal sugerida</option>
+    </select>
+    <section id="showPixar" class="sectionStyles">
+    </section>
+</div>
 
-    <div id="fourthPage">
-        <div id='descriptionStudioPixar' style="display:none;">
-            <h1>Studio Pixar</h1>
-            <p>Pixar Animation Studios (Pixar) es un estudio cinematográfico de animación por computadora subsidario de
-                Walt Disney Studios y propiedad de The Walt Disney Company con sede en Emeryville, Estados Unidos.3​ Su
-                origen se remonta a 1979, cuando comenzó a operar como The Graphics Group, la división computacional de
-                Lucasfilm. Su filmografía, producida con su propio software RenderMan, incluye algunas de las películas
-                animadas más exitosas y elogiadas de todos los tiempos. Asimismo el equipo de Pixar ha recibido varios
-                premios por sus logros técnicos en el cine de animación.</p>
+<div id="fifthPage">
+    <div id="descriptionStudioGhibli" style="display:none;">
+        <div class="row">
+            <div class="col-lg-12">
+                <img class="img-fluid" src="images/ghibliHeadercut.png" />
+            </div>
         </div>
-        <h3>Busca tu película:</h3>
-        <select id="genreSearchPixar">
-            <option value="">Filtrar por Género</option>
-            <option value="Action">Acción</option>
-            <option value="Adventure">Aventura</option>
-            <option value="Sci-fi">Ciencia Ficción</option>
-            <option value="Comedy">Comedia</option>
-            <option value="Sports">Deportes</option>
-            <option value="Family">Familiar</option>
-            <option value="Fantasy">Fantasía</option>
-            <option value="Mystery">Misterio</option>
-            <option value="Musical">Musical</option>
-            <option value="Romance">Romance</option>
-        </select>
-        <select id="ratedSearchPixar">
-            <option value="">Filtrar por Clasificación</option>
-            <option value="G">G - Apto para todo público</option>
-            <option value="PG">PG - Guía paternal sugerida</option>
-            <option value="PG-13">PG-13 - Supervisión paternal obligatoria</option>
-        </select>
-        <section id="showPixar" class="sectionStyles">
-        </section>
-    </div>
-
-    <div id="fifthPage">
-        <div id="descriptionStudioGhibli" style="display:none;">
-            <h1>Studio Ghibli</h1>
-            <p>Studio Ghibli es un estudio japonés de animación, considerado por la crítica especializada y muchos
-                cinéfilos como uno de los mejores estudios de animación del mundo en la actualidad. Fundado en 1985,
-                está dirigido por el galardonado director Hayao Miyazaki junto a su amigo y mentor, Isao Takahata. Sus
-                orígenes datan de 1983, con la película Nausicäa del Valle del Viento, la cual comenzó como un manga en
-                una publicación de la revista Tokuma Shoten.</p>
+        <h1 class="studioTitle">Studio Ghibli</h1>
         </div>
-        <h3>Busca tu película:</h3>
-        <select id="genreSearchGhibli">
+        <h2 class="instruction">Ahora filtra las películas según desees:</h2>
+    <select id="genreSearchGhibli" class="selectBox">
             <option value="">Filtrar por Género</option>
-            <option value="Action">Acción</option>
-            <option value="Adventure">Aventura</option>
-            <option value="Sci-fi">Ciencia Ficción</option>
-            <option value="Comedy">Comedia</option>
-            <option value="Sports">Deportes</option>
-            <option value="Family">Familiar</option>
-            <option value="Fantasy">Fantasía</option>
-            <option value="Mystery">Misterio</option>
-            <option value="Musical">Musical</option>
-            <option value="Romance">Romance</option>
-        </select>
-        <select id="ratedSearchGhibli">
+            <option class="allSelect" value="Adventure">Aventura</option>
+            <option class="allSelect" value="Comedy">Comedia</option>
+            <option class="allSelect" value="Family">Familiar</option>
+            <option class="allSelect" value="Fantasy">Fantasía</option>
+            <option class="allSelect" value="Romance">Romance</option>
+    </select>
+    <select id="ratedSearchGhibli" class="selectBox">
             <option value="">Filtrar por Clasificación</option>
-            <option value="G">G - Apto para todo público</option>
-            <option value="PG">PG - Guía paternal sugerida</option>
-            <option value="PG-13">PG-13 - Supervisión paternal obligatoria</option>
-        </select>
-        <section id="showGhibli" class="sectionStyles">
-        </section>
-    </div>
-<!-- Footer -->
+            <option class="allSelect" value="G">G - Apto para todo público</option>
+            <option class="allSelect" value="PG">PG - Guía paternal sugerida</option>
+            <option class="allSelect" value="PG-13">PG-13 - Supervisión paternal obligatoria</option>
+    </select>
+    <section id="showGhibli" class="sectionStyles">
+    </section>
+</div>
+  <!-- Footer -->
 <footer class="page-footer font-small">
     <!-- Footer Elements -->
     <div class="container">
@@ -233,7 +213,6 @@
     <div class="footer-copyright text-center py-3">© 2020 Todos los derechos reservados
     </div>
     <!-- Copyright -->
-  
   </footer>
     <script src="data.js"></script>
     <script src="main.js"></script>
@@ -243,5 +222,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
-
 </html>
