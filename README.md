@@ -164,7 +164,6 @@ La tipografía usada es, primero, en el logo, un poco más interactiva para darl
 - **Color:** 
 Se eligió, principalmente, el color azul, puesto que éste color provoca simpatía, amistad, confianza y fidelidad en los observadores, lo cual va directamente relacionado con el sentido de nuestro sitio: un ambiente familiar, que provoque confianza en el usuario y sienta la libertad de buscar las películas infantiles que desee. Combinamos este color junto con el naranja pastel, pues, además de ser parte del ticket del logo, provoca energía y felicidad, característico de los niños. 
 
-
 ## Trabajo en Equipo
 
 Nuestro equipo lo conforman:
@@ -179,5 +178,3 @@ Las decisiones de diseño y prototipado fueron tomadas en conjunto, siendo Paule
 El desarrollo front end de nuestro proyecto fue trabajo colaborativo, muchas veces trabajando en un mismo pc para corroborar código e integrar cambios. Utilizamos estrategias de code review y pair-programming, compartiendo conocimientos constantemente, en especial todo lo que se refiere al uso de git, bootstrap y procesos de interfaz del usuario.
 
 Las iteraciones del prototipado fueron llevadas a cabo por las 4, participando del proceso de entrevista y registro de feedback.
-
-
