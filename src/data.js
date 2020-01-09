@@ -30,11 +30,8 @@ function showDisneyMovies (genreDisney) {
                                 <div class="row"><p class="pink datos"><span class="bold">Año:</span> ${data.Year}</p>
                                 <p class="pink datos"><span class="bold">Clasificación:</span> ${data.Rated}</p></div>
                                 <p><span class="bold">Sinopsis:</span> ${data.Plot}</p>
-                                <p><span class="bold">Idioma:</span> ${data.Language}</p>
-                                <p><span class="bold">País:</span> ${data.Country}</p>
-                                <p><span class="bold">🏆 Premios:</span> ${data.Awards}</p>
-                                <div class="pink"><p><span class="bold">Director:</span> ${data.Director}</p>
-                                <p><span class="bold">Writer:</span> ${data.Writer}</p>
+                                <div class="pink">
+                                <p><span class="bold">Duración:</span> ${data.Runtime}</p>
                                 <p><span class="bold">Reparto:</span> ${data.Actors}</p></div>
                                     </div>
                             </div>
@@ -71,12 +68,13 @@ function showDisneyMovies (genreDisney) {
                                 <div class="col-4"><img src="${data.Poster}" alt="" class="img-thumbnail"></div>
                                 <div class="align-left col-8">
                                     <h3 class="align-left title-movie">${data.Title}</h3>
-                                    <p><span class="bold">Año:</span> ${data.Year}</p>
-                                    <p><span class="bold">Clasificación:</span> ${data.Rated}</p>
-                                    <p><span class="bold">Género:</span> ${data.Genre}</p>
-                                    <p><span class="bold">Sinopsis:</span> ${data.Plot}</p>
-                                    <p><span class="bold">Reparto:</span> ${data.Actors}</p>
-                                    <p><span class="bold">🏆 Premios:</span> ${data.Awards}</p>
+                                    <p class="genre"><span class="bold">Género:</span> ${data.Genre}</p>
+                                <div class="row"><p class="pink datos"><span class="bold">Año:</span> ${data.Year}</p>
+                                <p class="pink datos"><span class="bold">Clasificación:</span> ${data.Rated}</p></div>
+                                <p><span class="bold">Sinopsis:</span> ${data.Plot}</p>
+                                <div class="pink">
+                                <p><span class="bold">Duración:</span> ${data.Runtime}</p>
+                                <p><span class="bold">Reparto:</span> ${data.Actors}</p></div>
                                         </div>
                                 </div>
                             </div>
@@ -115,12 +113,13 @@ function showDreamworksMovies (genreDreamworks) {
                             <div class="col-4"><img src="${data.Poster}" alt="" class="img-thumbnail"></div>
                             <div class="align-left col-8">
                                 <h3 class="align-left title-movie">${data.Title}</h3>
-                                <p><span class="bold">Año:</span> ${data.Year}</p>
-                                <p><span class="bold">Clasificación:</span> ${data.Rated}</p>
-                                <p><span class="bold">Género:</span> ${data.Genre}</p>
+                                <p class="genre"><span class="bold">Género:</span> ${data.Genre}</p>
+                                <div class="row"><p class="pink datos"><span class="bold">Año:</span> ${data.Year}</p>
+                                <p class="pink datos"><span class="bold">Clasificación:</span> ${data.Rated}</p></div>
                                 <p><span class="bold">Sinopsis:</span> ${data.Plot}</p>
-                                <p><span class="bold">Reparto:</span> ${data.Actors}</p>
-                                <p><span class="bold">🏆 Premios:</span> ${data.Awards}</p>
+                                <div class="pink">
+                                <p><span class="bold">Duración:</span> ${data.Runtime}</p>
+                                <p><span class="bold">Reparto:</span> ${data.Actors}</p></div>
                                     </div>
                             </div>
                         </div>
@@ -155,12 +154,13 @@ function showDreamworksMovies (genreDreamworks) {
                             <div class="col-4"><img src="${data.Poster}" alt="" class="img-thumbnail"></div>
                             <div class="align-left col-8">
                                 <h3 class="align-left title-movie">${data.Title}</h3>
-                                <p><span class="bold">Año:</span> ${data.Year}</p>
-                                <p><span class="bold">Clasificación:</span> ${data.Rated}</p>
-                                <p><span class="bold">Género:</span> ${data.Genre}</p>
+                                <p class="genre"><span class="bold">Género:</span> ${data.Genre}</p>
+                                <div class="row"><p class="pink datos"><span class="bold">Año:</span> ${data.Year}</p>
+                                <p class="pink datos"><span class="bold">Clasificación:</span> ${data.Rated}</p></div>
                                 <p><span class="bold">Sinopsis:</span> ${data.Plot}</p>
-                                <p><span class="bold">Reparto:</span> ${data.Actors}</p>
-                                <p><span class="bold">🏆 Premios:</span> ${data.Awards}</p>
+                                <div class="pink">
+                                <p><span class="bold">Duración:</span> ${data.Runtime}</p>
+                                <p><span class="bold">Reparto:</span> ${data.Actors}</p></div>
                                     </div>
                             </div>
                         </div>
@@ -199,12 +199,13 @@ function showPixarMovies (genrePixar) {
                                 <div class="col-4"><img src="${data.Poster}" alt="" class="img-thumbnail"></div>
                                 <div class="align-left col-8">
                                     <h3 class="align-left title-movie">${data.Title}</h3>
-                                    <p><span class="bold">Año:</span> ${data.Year}</p>
-                                    <p><span class="bold">Clasificación:</span> ${data.Rated}</p>
-                                    <p><span class="bold">Género:</span> ${data.Genre}</p>
-                                    <p><span class="bold">Sinopsis:</span> ${data.Plot}</p>
-                                    <p><span class="bold">Reparto:</span> ${data.Actors}</p>
-                                    <p><span class="bold">🏆 Premios:</span> ${data.Awards}</p>
+                                    <p class="genre"><span class="bold">Género:</span> ${data.Genre}</p>
+                                <div class="row"><p class="pink datos"><span class="bold">Año:</span> ${data.Year}</p>
+                                <p class="pink datos"><span class="bold">Clasificación:</span> ${data.Rated}</p></div>
+                                <p><span class="bold">Sinopsis:</span> ${data.Plot}</p>
+                                <div class="pink">
+                                <p><span class="bold">Duración:</span> ${data.Runtime}</p>
+                                <p><span class="bold">Reparto:</span> ${data.Actors}</p></div>
                                         </div>
                                 </div>
                             </div>
@@ -239,12 +240,13 @@ function showPixarMoviesForRated(ratedPixar) {
                                 <div class="col-4"><img src="${data.Poster}" alt="" class="img-thumbnail"></div>
                                 <div class="align-left col-8">
                                     <h3 class="align-left title-movie">${data.Title}</h3>
-                                    <p><span class="bold">Año:</span> ${data.Year}</p>
-                                    <p><span class="bold">Clasificación:</span> ${data.Rated}</p>
-                                    <p><span class="bold">Género:</span> ${data.Genre}</p>
+                                    <p class="genre"><span class="bold">Género:</span> ${data.Genre}</p>
+                                    <div class="row"><p class="pink datos"><span class="bold">Año:</span> ${data.Year}</p>
+                                    <p class="pink datos"><span class="bold">Clasificación:</span> ${data.Rated}</p></div>
                                     <p><span class="bold">Sinopsis:</span> ${data.Plot}</p>
-                                    <p><span class="bold">Reparto:</span> ${data.Actors}</p>
-                                    <p><span class="bold">🏆 Premios:</span> ${data.Awards}</p>
+                                    <div class="pink">
+                                    <p><span class="bold">Duración:</span> ${data.Runtime}</p>
+                                    <p><span class="bold">Reparto:</span> ${data.Actors}</p></div>
                                         </div>
                                 </div>
                             </div>
@@ -283,12 +285,13 @@ function showGhibliMovies (genreGhibli) {
                             <div class="col-4"><img src="${data.Poster}" alt="" class="img-thumbnail"></div>
                             <div class="align-left col-8">
                                 <h3 class="align-left title-movie">${data.Title}</h3>
-                                <p><span class="bold">Año:</span> ${data.Year}</p>
-                                <p><span class="bold">Clasificación:</span> ${data.Rated}</p>
-                                <p><span class="bold">Género:</span> ${data.Genre}</p>
+                                <p class="genre"><span class="bold">Género:</span> ${data.Genre}</p>
+                                <div class="row"><p class="pink datos"><span class="bold">Año:</span> ${data.Year}</p>
+                                <p class="pink datos"><span class="bold">Clasificación:</span> ${data.Rated}</p></div>
                                 <p><span class="bold">Sinopsis:</span> ${data.Plot}</p>
-                                <p><span class="bold">Reparto:</span> ${data.Actors}</p>
-                                <p><span class="bold">🏆 Premios:</span> ${data.Awards}</p>
+                                <div class="pink">
+                                <p><span class="bold">Duración:</span> ${data.Runtime}</p>
+                                <p><span class="bold">Reparto:</span> ${data.Actors}</p></div>
                                     </div>
                             </div>
                         </div>
@@ -323,12 +326,13 @@ function showGhibliMovies (genreGhibli) {
                                 <div class="col-4"><img src="${data.Poster}" alt="" class="img-thumbnail"></div>
                                 <div class="align-left col-8">
                                     <h3 class="align-left title-movie">${data.Title}</h3>
-                                    <p><span class="bold">Año:</span> ${data.Year}</p>
-                                    <p><span class="bold">Clasificación:</span> ${data.Rated}</p>
-                                    <p><span class="bold">Género:</span> ${data.Genre}</p>
-                                    <p><span class="bold">Sinopsis:</span> ${data.Plot}</p>
-                                    <p><span class="bold">Reparto:</span> ${data.Actors}</p>
-                                    <p><span class="bold">🏆 Premios:</span> ${data.Awards}</p>
+                                    <p class="genre"><span class="bold">Género:</span> ${data.Genre}</p>
+                                <div class="row"><p class="pink datos"><span class="bold">Año:</span> ${data.Year}</p>
+                                <p class="pink datos"><span class="bold">Clasificación:</span> ${data.Rated}</p></div>
+                                <p><span class="bold">Sinopsis:</span> ${data.Plot}</p>
+                                <div class="pink">
+                                <p><span class="bold">Duración:</span> ${data.Runtime}</p>
+                                <p><span class="bold">Reparto:</span> ${data.Actors}</p></div>
                                         </div>
                                 </div>
                             </div>

@@ -7,6 +7,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -79,6 +80,8 @@ h3 {
     min-height: 1px;
     padding: 1.3rem;
     background: #B5DBDC;
+    text-align: left;
+  
   }
 
 .title-movie {
@@ -92,10 +95,18 @@ h3 {
 
 }
 
-.masthead {
+.masthead{
   height: 100vh;
   min-height: 500px;
   background-image: url(images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.mastheass{
+  height: 100vh;
+  min-height: 500px;
+  background-image: url(images/disneyHeader.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -108,15 +119,41 @@ h3 {
 .genre{
   background-color:rgba(51, 51, 51, 0.8);
   color:white;
+  margin-right: 5%;
 }
 
 .pink{
   background-color:#FFF0B8;
+  padding: 2%;
 }
 
 .datos{
   -ms-flex: 0 0 33.333333%;
   flex: 0 0 33.333333%;
-  max-width: 33.333333%;
-  margin: 2;
+  margin-right: 5%;
+  margin-left: 2%;
+}
+
+.instruction{
+  text-align:center;
+  font-size: medium;
+  color:rgb(16, 16, 110);
+}
+
+.selectBox{
+margin-left:25%;
+margin-top:2%;
+margin-bottom:3%;
+background-color:rgb(44, 43, 43);
+color:white;
+}
+
+.allSelect{
+background-color: rgb(100, 100, 100);
+color:white;
+}
+
+.studioTitle{
+  background-color: #FFF0B8;
+  padding: 1%;
 }
