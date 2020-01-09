@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Stoke&display=swap" rel="stylesheet">
@@ -15,131 +17,76 @@
 
 <body>
     <header>
-    <div class="logo">
-        <a href=index.html><img src="images/logo2.png"></a>
-    </div>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                <img title="Volver al Home" src="images/logo3.png" alt="">
+            </a>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </nav>
     </header>
 
 <div id="firstPage">
     <section>
-        <header class="masthead">
-            <div class="container h-100">
-              <div class="row h-100 align-items-center">
-                <div class="col-12 text-center">
-                  <h1 class="font-weight-light">Las mejores películas de tus estudios favoritos</h1>
-                  <p class="lead">Navega por PelisKids para conocer las mejores opciones de filmes infantiles. ¡Con reseñas incluídas! Escoge la mejor opción para una tarde de películas en familia.</p>
-                </div>
+        <!-- Carrusel con peliculas -->
+        <!-- <div class="row justify-content-center">
+            <div class="col-sm-3">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block" src="images/tarzanPoster.jpg" alt="First slide">
               </div>
+              <div class="carousel-item">
+                <img class="d-block" src="images/aladinP.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="images/frozenP.jpg" alt="Third slide">
+              </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+    </div> -->
+<div class="container">
+    <div class="p-4">
+        <img class="img-fluid" src="images/headerAll.png" alt="Responsive image">
+    </div>
+<div class="p-5 bold"><h2 class="bold">El catálogo de películas para los más pequeños (y sus padres)</h2>
+    <p>Navega por peliskids, un catálogo que te llevará a conocer los mejores filmes infantiles de los estudios de animación más conocidos, con toda la información que necesitas para escoger la pelicula perfecta para ti y tu familia.</p></div>
+</div>
+
+<div class="selectStudio p-4 text-center"><h2>Selecciona un estudio para comenzar:</p></div>
+
+        <div class="container">
+            <div class="p-3 mr-3 text-center">
+                <img id="allDisney" class="iconStudio rounded-circle" height="200" width="200" src="images/disneyIcon.jpg" alt="Responsive image">
+                <img id="allDreamworks" class="iconStudio rounded-circle" height="200" width="200" src="images/dreamworksIcon.png" alt="Responsive image">
+                <img id="allPixar" class="iconStudio rounded-circle" height="200" width="200" src="images/pixarIcon.png" alt="Responsive image">
+                <img id="allGhibli" class="iconStudio rounded-circle" height="200" width="200" src="images/ghibliIcon.png" alt="Responsive image">
             </div>
-          </header>
-        <div class="jumbotron jumbotron-fluid">
-            <div class="d-flex text-center">
-                <img src="images/palomitas-de-maiz.png" alt="icon" height="100" width="100"><h2 class="lead">Echa un vistazo a las siguientes categorías.<p>¿Ya tienes listas las palomitas?</p> </h2><img src="images/palomitas-de-maiz.png" alt="icon" height="100" width="100">
-            </div>
-          </div>          
-        <div class="text-center">
-            <img id="allDisney" class="rounded-circle" height="250" width="250" src="images/disneyIcon.jpg" alt="Responsive image">
-            <img id="allDreamworks" class="rounded-circle" height="250" width="250" src="images/dreamworksIcon.png" alt="Responsive image">
-            <img id="allPixar" class="rounded-circle" height="250" width="250" src="images/pixarIcon.png" alt="Responsive image">
-            <img id="allGhibli" class="rounded-circle" height="250" width="250" src="images/ghibliIcon.png" alt="Responsive image">
         </div>
     </section>
 </div>
 
-<div id="secondPage">
-    <div id='descriptionStudioDisney' style="display:none;">
-        <h1>Studio Disney</h1>
-        <p>The Walt Disney Studios es un estudio de cine estadounidense, es una de las cuatro divisiones comerciales de The Walt Disney Company. El estudio, es uno de los más importantes del mundo ya que es considerado el número uno de los "Cinco Grandes" y es mejor conocido por sus divisiones cinematográficas multifacéticas, tiene su sede en el estudio homónimo de The Walt Disney Studios en Burbank, California. Fundado en 1923, es el cuarto más antiguo entre los principales estudios.</p>
-    </div>
-    <h3>Busca tu película:</h3>
-    <select id="genreSearchDisney">
-        <option value="">Filtrar por Género</option>
-        <option value="Action">Acción</option>
-        <option value="Adventure">Aventura</option>
-        <option value="Sci-fi">Ciencia Ficción</option>
-        <option value="Comedy">Comedia</option>
-        <option value="Sports">Deportes</option>
-        <option value="Family">Familiar</option>
-        <option value="Fantasy">Fantasía</option>
-        <option value="Mystery">Misterio</option>
-        <option value="Musical">Musical</option>
-        <option value="Romance">Romance</option>
-    </select>
-    <select id="ratedSearchDisney">
-            <option value="">Filtrar por Clasificación</option>
-            <option value="G">G - Apto para todo público</option>
-            <option value="PG">PG - Guía paternal sugerida</option>
-            <option value="PG-13">PG-13 - Supervisión paternal obligatoria</option>
-    </select>
-    <section id="showDisney" class="sectionStyles">
-    </section>
-</div>
-
-<div id="thirdPage">
-    <div id="descriptionStudioDreamwork" style="display:none;">
-        <h1>Studio Dreamworks</h1>
-        <p>DreamWorks es un estudio de cine que produce y distribuye películas, así como videojuegos y programas de televisión, fundado el 12 de octubre de 1994, poco tiempo después de que Jeffrey Katzenberg renunciara a The Walt Disney Company. En 2016 DreamWorks fue comprada por Comcast,la compañía de telecomunicaciones dueña de NBC Universal. Esta compra fue lo suficiente para mejorar el estudio. Hoy está entre las 8 grandes de Hollywood.</p>
-    </div>
-    <h3>Busca tu película:</h3>
-    <select id="genreSearchDreamworks">
-            <option value="">Filtrar por Género</option>
-            <option value="Action">Acción</option>
-            <option value="Adventure">Aventura</option>
-            <option value="Sci-fi">Ciencia Ficción</option>
-            <option value="Comedy">Comedia</option>
-            <option value="Sports">Deportes</option>
-            <option value="Family">Familiar</option>
-            <option value="Fantasy">Fantasía</option>
-            <option value="Mystery">Misterio</option>
-            <option value="Musical">Musical</option>
-            <option value="Romance">Romance</option>
-    </select>
-    <select id="ratedSearchDreamworks">
-            <option value="">Filtrar por Clasificación</option>
-            <option value="G">G - Apto para todo público</option>
-            <option value="PG">PG - Guía paternal sugerida</option>
-            <option value="PG-13">PG-13 - Supervisión paternal obligatoria</option>
-    </select>    
-    <section id="showDreamworks" class="sectionStyles">
-    </section>
-</div>
-
-<div id="fourthPage">
-    <div id='descriptionStudioPixar' style="display:none;">
-        <h1>Studio Pixar</h1>
-        <p>Pixar Animation Studios (Pixar) es un estudio cinematográfico de animación por computadora subsidario de Walt Disney Studios y propiedad de The Walt Disney Company con sede en Emeryville, Estados Unidos.3​ Su origen se remonta a 1979, cuando comenzó a operar como The Graphics Group, la división computacional de Lucasfilm. Su filmografía, producida con su propio software RenderMan, incluye algunas de las películas animadas más exitosas y elogiadas de todos los tiempos. Asimismo el equipo de Pixar ha recibido varios premios por sus logros técnicos en el cine de animación.</p>
-    </div>
-    <h3>Busca tu película:</h3>
-    <select id="genreSearchPixar">
-            <option value="">Filtrar por Género</option>
-            <option value="Action">Acción</option>
-            <option value="Adventure">Aventura</option>
-            <option value="Sci-fi">Ciencia Ficción</option>
-            <option value="Comedy">Comedia</option>
-            <option value="Sports">Deportes</option>
-            <option value="Family">Familiar</option>
-            <option value="Fantasy">Fantasía</option>
-            <option value="Mystery">Misterio</option>
-            <option value="Musical">Musical</option>
-            <option value="Romance">Romance</option>
-    </select>
-    <select id="ratedSearchPixar">
-            <option value="">Filtrar por Clasificación</option>
-            <option value="G">G - Apto para todo público</option>
-            <option value="PG">PG - Guía paternal sugerida</option>
-            <option value="PG-13">PG-13 - Supervisión paternal obligatoria</option>
-    </select>
-    <section id="showPixar" class="sectionStyles">
-    </section>
-</div>
-
-<div id="fifthPage">
-    <div id="descriptionStudioGhibli" style="display:none;">
-        <h1>Studio Ghibli</h1>
-        <p>Studio Ghibli es un estudio japonés de animación, considerado por la crítica especializada y muchos cinéfilos como uno de los mejores estudios de animación del mundo en la actualidad. Fundado en 1985, está dirigido por el galardonado director Hayao Miyazaki junto a su amigo y mentor, Isao Takahata. Sus orígenes datan de 1983, con la película Nausicäa del Valle del Viento, la cual comenzó como un manga en una publicación de la revista Tokuma Shoten.</p>
+    <div id="secondPage">
+        <div id='descriptionStudioDisney' style="display:none;">
+            <h1>Studio Disney</h1>
+            <p>The Walt Disney Studios es un estudio de cine estadounidense, es una de las cuatro divisiones comerciales
+                de The Walt Disney Company. El estudio, es uno de los más importantes del mundo ya que es considerado el
+                número uno de los "Cinco Grandes" y es mejor conocido por sus divisiones cinematográficas
+                multifacéticas, tiene su sede en el estudio homónimo de The Walt Disney Studios en Burbank, California.
+                Fundado en 1923, es el cuarto más antiguo entre los principales estudios.</p>
         </div>
-    <h3>Busca tu película:</h3>
-    <select id="genreSearchGhibli">
+        <h3>Busca tu película:</h3>
+        <select id="genreSearchDisney">
             <option value="">Filtrar por Género</option>
             <option value="Action">Acción</option>
             <option value="Adventure">Aventura</option>
@@ -151,18 +98,150 @@
             <option value="Mystery">Misterio</option>
             <option value="Musical">Musical</option>
             <option value="Romance">Romance</option>
-    </select>
-    <select id="ratedSearchGhibli">
+        </select>
+        <select id="ratedSearchDisney">
             <option value="">Filtrar por Clasificación</option>
             <option value="G">G - Apto para todo público</option>
             <option value="PG">PG - Guía paternal sugerida</option>
             <option value="PG-13">PG-13 - Supervisión paternal obligatoria</option>
-    </select>
-    <section id="showGhibli" class="sectionStyles">
-    </section>
-</div>
+        </select>
+        <section id="showDisney" class="sectionStyles">
+        </section>
+    </div>
 
- <script src="data.js"></script>
- <script src="main.js"></script>  
+    <div id="thirdPage">
+        <div id="descriptionStudioDreamwork" style="display:none;">
+            <h1>Studio Dreamworks</h1>
+            <p>DreamWorks es un estudio de cine que produce y distribuye películas, así como videojuegos y programas de
+                televisión, fundado el 12 de octubre de 1994, poco tiempo después de que Jeffrey Katzenberg renunciara a
+                The Walt Disney Company. En 2016 DreamWorks fue comprada por Comcast,la compañía de telecomunicaciones
+                dueña de NBC Universal. Esta compra fue lo suficiente para mejorar el estudio. Hoy está entre las 8
+                grandes de Hollywood.</p>
+        </div>
+        <h3>Busca tu película:</h3>
+        <select id="genreSearchDreamworks">
+            <option value="">Filtrar por Género</option>
+            <option value="Action">Acción</option>
+            <option value="Adventure">Aventura</option>
+            <option value="Sci-fi">Ciencia Ficción</option>
+            <option value="Comedy">Comedia</option>
+            <option value="Sports">Deportes</option>
+            <option value="Family">Familiar</option>
+            <option value="Fantasy">Fantasía</option>
+            <option value="Mystery">Misterio</option>
+            <option value="Musical">Musical</option>
+            <option value="Romance">Romance</option>
+        </select>
+        <select id="ratedSearchDreamworks">
+            <option value="">Filtrar por Clasificación</option>
+            <option value="G">G - Apto para todo público</option>
+            <option value="PG">PG - Guía paternal sugerida</option>
+            <option value="PG-13">PG-13 - Supervisión paternal obligatoria</option>
+        </select>
+        <section id="showDreamworks" class="sectionStyles">
+        </section>
+    </div>
+
+    <div id="fourthPage">
+        <div id='descriptionStudioPixar' style="display:none;">
+            <h1>Studio Pixar</h1>
+            <p>Pixar Animation Studios (Pixar) es un estudio cinematográfico de animación por computadora subsidario de
+                Walt Disney Studios y propiedad de The Walt Disney Company con sede en Emeryville, Estados Unidos.3​ Su
+                origen se remonta a 1979, cuando comenzó a operar como The Graphics Group, la división computacional de
+                Lucasfilm. Su filmografía, producida con su propio software RenderMan, incluye algunas de las películas
+                animadas más exitosas y elogiadas de todos los tiempos. Asimismo el equipo de Pixar ha recibido varios
+                premios por sus logros técnicos en el cine de animación.</p>
+        </div>
+        <h3>Busca tu película:</h3>
+        <select id="genreSearchPixar">
+            <option value="">Filtrar por Género</option>
+            <option value="Action">Acción</option>
+            <option value="Adventure">Aventura</option>
+            <option value="Sci-fi">Ciencia Ficción</option>
+            <option value="Comedy">Comedia</option>
+            <option value="Sports">Deportes</option>
+            <option value="Family">Familiar</option>
+            <option value="Fantasy">Fantasía</option>
+            <option value="Mystery">Misterio</option>
+            <option value="Musical">Musical</option>
+            <option value="Romance">Romance</option>
+        </select>
+        <select id="ratedSearchPixar">
+            <option value="">Filtrar por Clasificación</option>
+            <option value="G">G - Apto para todo público</option>
+            <option value="PG">PG - Guía paternal sugerida</option>
+            <option value="PG-13">PG-13 - Supervisión paternal obligatoria</option>
+        </select>
+        <section id="showPixar" class="sectionStyles">
+        </section>
+    </div>
+
+    <div id="fifthPage">
+        <div id="descriptionStudioGhibli" style="display:none;">
+            <h1>Studio Ghibli</h1>
+            <p>Studio Ghibli es un estudio japonés de animación, considerado por la crítica especializada y muchos
+                cinéfilos como uno de los mejores estudios de animación del mundo en la actualidad. Fundado en 1985,
+                está dirigido por el galardonado director Hayao Miyazaki junto a su amigo y mentor, Isao Takahata. Sus
+                orígenes datan de 1983, con la película Nausicäa del Valle del Viento, la cual comenzó como un manga en
+                una publicación de la revista Tokuma Shoten.</p>
+        </div>
+        <h3>Busca tu película:</h3>
+        <select id="genreSearchGhibli">
+            <option value="">Filtrar por Género</option>
+            <option value="Action">Acción</option>
+            <option value="Adventure">Aventura</option>
+            <option value="Sci-fi">Ciencia Ficción</option>
+            <option value="Comedy">Comedia</option>
+            <option value="Sports">Deportes</option>
+            <option value="Family">Familiar</option>
+            <option value="Fantasy">Fantasía</option>
+            <option value="Mystery">Misterio</option>
+            <option value="Musical">Musical</option>
+            <option value="Romance">Romance</option>
+        </select>
+        <select id="ratedSearchGhibli">
+            <option value="">Filtrar por Clasificación</option>
+            <option value="G">G - Apto para todo público</option>
+            <option value="PG">PG - Guía paternal sugerida</option>
+            <option value="PG-13">PG-13 - Supervisión paternal obligatoria</option>
+        </select>
+        <section id="showGhibli" class="sectionStyles">
+        </section>
+    </div>
+<!-- Footer -->
+<footer class="page-footer font-small">
+    <!-- Footer Elements -->
+    <div class="container">
+      <div class="row">
+        <div class="p-3">
+          <div class="flex-center">
+            <!-- Youtube -->
+            <a class="fb-ic">
+              <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Netflix-->
+            <a class="pin-ic">
+              <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+ <!-- Footer Elements -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Todos los derechos reservados:
+      <a href="https://mdbootstrap.com/education/bootstrap/"> Laboratoria</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
+
 </html>
