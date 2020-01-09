@@ -7,7 +7,6 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
-
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -18,11 +17,16 @@ body {
   /* text-align: left; */
   background-color:rgba(150, 215, 224, 0.2);
 }
- 
+
+ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
 .thumbnail {
   position: relative;
 
  }
+
  .caption {
   position: absolute;
   font-size: 39px;
@@ -95,27 +99,6 @@ h3 {
 
 }
 
-.masthead{
-  height: 100vh;
-  min-height: 500px;
-  background-image: url(images/background.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.mastheass{
-  height: 100vh;
-  min-height: 500px;
-  background-image: url(images/disneyHeader.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.jumbotron {
-  background-color: #FFF0B8;
-}
-
 .genre{
   background-color:rgba(51, 51, 51, 0.8);
   color:white;
@@ -157,3 +140,28 @@ color:white;
   background-color: #FFF0B8;
   padding: 1%;
 }
+
+  max-width: 33.333333%;
+  margin: 2;
+}
+
+.pb-5, .py-5 {
+  padding-bottom: none;
+}
+.pt-5, .py-5 {
+  padding-top: none;
+}
+
+.selectStudio {
+  background-color: #FFF0B8;
+}
+
+.iconStudio {
+margin: 2%;
+}
+
+.iconStudio:hover {
+  transform:scale(1.2);
+  opacity: initial;
+  }
+
