@@ -7,7 +7,7 @@ function showDisneyMovies (genreDisney) {
     disneyBase.innerHTML = ''; //limpiando div
     let finalData;  
         for (let i = 0; i<bestDisneyMovies.length; i++) {    
-            fetch('https://www.omdbapi.com/?i='+bestDisneyMovies[i].imdbID+'&apikey=532b53fa')
+            fetch('http://www.omdbapi.com/?i='+bestDisneyMovies[i].imdbID+'&apikey=532b53fa')
             .then(res => res.json())
             .then(data => { // todos los elementos caen en data
             finalData = (data.Genre.includes(genreDisney)?data:'');// si dentro de la data.genero esta incluido el genero seleccionado se ejecutara si se cumple y si no quedara vacio
@@ -49,7 +49,7 @@ function showDisneyMovies (genreDisney) {
         disneyBase.innerHTML = '';
         let finalData;  
             for (let i = 0; i<bestDisneyMovies.length; i++) {    
-                fetch('https://www.omdbapi.com/?i='+bestDisneyMovies[i].imdbID+'&apikey=532b53fa')
+                fetch('http://www.omdbapi.com/?i='+bestDisneyMovies[i].imdbID+'&apikey=532b53fa')
                 .then(res => res.json())
                 .then(data => {
                 finalData = (data.Rated.includes(ratedDisney)?data:'');
@@ -94,7 +94,7 @@ function showDreamworksMovies (genreDreamworks) {
     dreamworksBase.innerHTML = '';
     let finalData;  
         for (let i = 0; i<bestDreamworksMovies.length; i++) {    
-            fetch('https://www.omdbapi.com/?i='+bestDreamworksMovies[i].imdbID+'&apikey=532b53fa')
+            fetch('http://www.omdbapi.com/?i='+bestDreamworksMovies[i].imdbID+'&apikey=532b53fa')
             .then(res => res.json())
             .then(data => {
             finalData = (data.Genre.includes(genreDreamworks)?data:'');
@@ -135,7 +135,7 @@ function showDreamworksMovies (genreDreamworks) {
         dreamworksBase.innerHTML = '';
         let finalData;  
         for (let i = 0; i<bestDreamworksMovies.length; i++) {    
-            fetch('https://www.omdbapi.com/?i='+bestDreamworksMovies[i].imdbID+'&apikey=532b53fa')
+            fetch('http://www.omdbapi.com/?i='+bestDreamworksMovies[i].imdbID+'&apikey=532b53fa')
             .then(res => res.json())
             .then(data => {
             finalData = (data.Rated.includes(ratedDreamwork)?data:'');
@@ -180,7 +180,7 @@ function showPixarMovies (genrePixar) {
     pixarBase.innerHTML = '';
     let finalData;  
         for (let i = 0; i<bestPixarMovies.length; i++) {    
-            fetch('https://www.omdbapi.com/?i='+bestPixarMovies[i].imdbID+'&apikey=532b53fa')
+            fetch('http://www.omdbapi.com/?i='+bestPixarMovies[i].imdbID+'&apikey=532b53fa')
             .then(res => res.json())
             .then(data => {
             finalData = (data.Genre.includes(genrePixar)?data:'');
@@ -221,7 +221,7 @@ function showPixarMoviesForRated(ratedPixar) {
     pixarBase.innerHTML = '';
     let finalData;  
         for (let i = 0; i<bestPixarMovies.length; i++) {    
-            fetch('https://www.omdbapi.com/?i='+bestPixarMovies[i].imdbID+'&apikey=532b53fa')
+            fetch('http://www.omdbapi.com/?i='+bestPixarMovies[i].imdbID+'&apikey=532b53fa')
             .then(res => res.json())
             .then(data => {
             finalData = (data.Rated.includes(ratedPixar)?data:'');
@@ -266,7 +266,7 @@ function showGhibliMovies (genreGhibli) {
     ghibliBase.innerHTML = '';
     let finalData;
         for (let i = 0; i<bestGhibliMovies.length; i++) {    
-            fetch('https://www.omdbapi.com/?i='+bestGhibliMovies[i].imdbID+'&apikey=532b53fa')
+            fetch('http://www.omdbapi.com/?i='+bestGhibliMovies[i].imdbID+'&apikey=532b53fa')
             .then(res => res.json())
             .then(data => {
             finalData = (data.Genre.includes(genreGhibli)?data:'');
@@ -307,7 +307,7 @@ function showGhibliMovies (genreGhibli) {
         ghibliBase.innerHTML = '';
         let finalData;
             for (let i = 0; i<bestGhibliMovies.length; i++) {    
-                fetch('https://www.omdbapi.com/?i='+bestGhibliMovies[i].imdbID+'&apikey=532b53fa')
+                fetch('http://www.omdbapi.com/?i='+bestGhibliMovies[i].imdbID+'&apikey=532b53fa')
                 .then(res => res.json())
                 .then(data => {
                 finalData = (data.Rated.includes(ratedGhibli)?data:'');
